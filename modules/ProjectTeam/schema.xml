@@ -1,0 +1,22 @@
+<?xml version='1.0'?>
+<schema>
+	<tables>
+		<table>
+			<name>vtiger_projectteam</name>
+			<sql><![CDATA[CREATE TABLE `vtiger_projectteam` (
+  `projectteamid` int(11) DEFAULT NULL,
+  `projectteamnote` varchar(100) DEFAULT NULL,
+  `projectteamfunction` varchar(40) DEFAULT NULL,
+  `teamrelproject` int(15) DEFAULT NULL,
+  `teamrelcontact` int(15) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8]]></sql>
+		</table>
+		<table>
+			<name>vtiger_projectteamcf</name>
+			<sql><![CDATA[CREATE TABLE `vtiger_projectteamcf` (
+  `projectteamid` int(11) NOT NULL,
+  PRIMARY KEY (`projectteamid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8]]></sql>
+		</table>
+	</tables>
+</schema>
